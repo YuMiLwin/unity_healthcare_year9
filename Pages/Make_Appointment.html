@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style1.css">
+   <link rel="icon" href="../IMG/LOGO.png">
+	<title>Make Appointment</title>
+</head>
+<body id="CT">
+	<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Unity</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Aboutus_page.html">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Services of Unity</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Services of Unity</label>
+          <ul class="drop-menu">
+             <li><a href="History.html">History</a></li>
+            <li><a href="Unity_Services.html">Services</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <!-- <li><a href="#">Drop menu 4</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Unity HealthCare</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Unity HealthCare</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../IMG/H3.png" alt="">
+              </div>
+              <div class="row">
+                <header>Events</header>
+                <ul class="mega-links">
+                  <li><a href="Find_Doctor.html">Find Doctors</a></li>
+                  <li><a href="#">Packages</a></li>
+                  <li><a href="Unity_MMSC.html">Membership cards</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>About Appointment</header>
+                <ul class="mega-links">
+                  <li><a href="LogIn.html">Log in</a></li>
+                  <li><a href="Make_Appointment.html">Appointment No </a></li>
+                  <li><a href="Time_To_Come.html">Shedules</a></li> 
+                </ul>
+              </div>
+              <div class="row">
+                <header>Health Library</header>
+                <ul class="mega-links">
+                  <li><a href="PG_S.html">Diseases </a></li>
+                  <li><a href="K3.html">Seasonal Diseases</a></li>
+                  <li><a href="Doctor_timetable.html">Doctors Scedule</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="News.html">News</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <br><br>
+  <!--end nav-->
+   <div class="background">
+       <div class="booking-form">
+           <h2>Appointment Form of Unity</h2>
+           <form action="">
+               <label for="name">Name/နာမည်:</label>
+               <input type="text" name="name" id="name" required>
+
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email" required>
+
+               <label for="phone">Phone/ဖုန်းနံပါတ်:</label>
+               <input type="text" name="phone" id="phone" required>
+
+               <label for="name">Address/လိပ်စာ:</label>
+               <textarea class="Address" required></textarea>
+
+               <label for="Doctor_Name">Doctor Name/ဆရာဝန်နာမည်:</label>
+               <input type="text" name="phone" id="phone" required>
+
+               <label for="phone">Select Date/ရက်စွဲ:</label>
+               <input type="date" name="date" id="date" required>
+              
+               <label for="speciality">Speciality/အထူးပြု:</label>
+               <input type="text" name="text" id="text" required>
+
+               <label for="Diseases Symptoms">Diseases Symptoms/ရောဂါလက္ခဏာများ:</label>
+               <input type="text" name="text" id="text" required>
+              
+               <button type="submit">Make Appointment</button>
+ 
+
+           </form>
+       </div>
+   </div>
+   <br><br>
+   <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2 id="He">About us</h2>
+          <div class="content">
+            <p id="Sm"><p>Our Unity HealthCare is founded in 1989 and our doctors are also patient and take good care to our patients. We also trained our workers really well so you guys won't be disappointed in us! So Let's Fight Together! </p>
+          </p>
+            <div class="social">
+               <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-viber fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #ffffff;"></i></a>
+            </div>
+            <a href="Citation">Citation</a>
+          </div>
+        </div>
+       <div class="center box">
+          <h2 id="He">Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">123, Hlden Street, Lanmadaw TownShip</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+089-765432100</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">Unity@info.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2 id="He">Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit" id="ypgs">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <!-- <span class="credit">Created By  </span> -->
+          <span class="far fa-copyright"></span><span>Copyright &copy; 2023 By Unity Health Care. All rights reserved</span>
+        </center>
+      </div>
+    </footer>

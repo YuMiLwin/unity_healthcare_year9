@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style1.css">
+   <link rel="icon" href="../IMG/LOGO.png">
+	<title>Contact Us</title>
+</head>
+<body id="CT">
+	<!--start nav-->
+	 <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Unity</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Aboutus_page.html">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Services of Unity</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Services of Unity</label>
+          <ul class="drop-menu">
+            <li><a href="History.html">History</a></li>
+            <li><a href="Unity_Services.html">Services</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <!-- <li><a href="#">Drop menu 4</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Unity HealthCare</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Unity HealthCare</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../IMG/H3.png" alt="">
+              </div>
+              <div class="row">
+                <header>Events</header>
+                <ul class="mega-links">
+                  <li><a href="Find_Doctor.html">Find Doctors</a></li>
+                  <li><a href="#">Packages</a></li>
+                  <li><a href="Unity_MMSC.html">Membership cards</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>About Appointment</header>
+                <ul class="mega-links">
+                  <li><a href="LogIn.html">Log in</a></li>
+                  <li><a href="Make_Appointment.html">Appointment No </a></li>
+                  <li><a href="Time_To_Come.html">Schedule</a></li> 
+                </ul>
+              </div>
+              <div class="row">
+                <header>Health Library</header>
+                <ul class="mega-links">
+                  <li><a href="PG_S.html">Diseases </a></li>
+                  <li><a href="K3.html">Seasonal  Diseases</a></li>
+                  <li><a href="Doctor_timetable.html">Doctor's Schedules</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="News.html">News</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <!-- <br><br><br> -->
+  <br/>
+	<!--end nav-->
+   <div class="banner"> 
+     <center><h2 class="nine">"Let's get to know more about Unity"</h2></center> 
+    <br/><br/>
+     <center><img class="SIC" src="../IMG/ContactUS.png"></center>
+
+   </div>
+  <!--start Contact Us section-->
+   <section class="contact">
+   	 <div class="container">
+   	 	  <h2>Contact Us</h2>
+
+   	 	  <div class="contact-wrapper">
+   	 	  	  <div class="contact-form">
+   	 	  	  	   <h3>Send Us a message</h3>
+   	 	  	  	   <form>
+   	 	  	  	   	 <div class="form-group">
+   	 	  	  	   	 	  <input type="text" name="name" placeholder="Your Name"> 
+   	 	  	  	   	 </div>
+   	 	  	  	   	 <div class="form-group">
+   	 	  	  	   	 	  <input type="email" name="email" placeholder="Your Email"> 
+   	 	  	  	   	 </div>
+   	 	  	  	   	 <div class="form-group">
+   	 	  	  	   	 	 <textarea name="message" placeholder="Your Message"></textarea>
+   	 	  	  	   	 </div>
+   	 	  	  	   	 <button type="submit">Send Message</button>
+   	 	  	  	   </form>
+   	 	  	  </div>
+   	 	  	  <div class="contact-info">
+   	 	  	  	  <h3>Contact Information</h3>
+   	 	  	  	  <p><i class="fa-solid fa-phone fa-beat-fade" style="color:#fff;"></i>+09 87940573</p>
+   	 	  	  	  <p><i class="fa-regular fa-envelope fa-beat-fade" style="color: #fff;"></i></i>info@Unity.com</p>
+   	 	  	  	  <p><i class="fa-solid fa-location-dot fa-beat-fade" style="color: #fff;"></i>125 street, Myanmar , Yangon</p>
+   	 	  	  </div>
+   	 	  </div>
+   	 </div>
+   </section>
+
+    <button class="chatbtn" onclick="openForm();"><i class="fa-solid fa-message fa-beat" style="color: #ffffff;"></i> Chat With Unity Health Care</button>
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1 class="OAS" style="color:black;">Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Enter your message" name="msg" required=""></textarea>
+
+            <button type="submit" class="Sbtn">Send</button>
+            <button type="button" class="btn_cancel" onclick="closeForm()">Close</button>
+        </form>
+
+    </div>
+
+
+  
+
+  
+
+
+   <!--end contact us section-->
+   <!--start footer-->
+     <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2 id="He">About us</h2>
+          <div class="content">
+            <p>Our Unity HealthCare is founded in 1989 and our doctors are also patient and take good care to our patients. We also trained our workers really well so you guys won't be disappointed in us! So Let's Fight Together! </p>
+          .</p>
+            <div class="social">
+               <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-viber fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #ffffff;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2 id="He">Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">123, Hlden Street, Lanmadaw TownShip</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+089-765432100</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">Unity@info.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2 id="He">Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <center><button type="submit">Send</button></center>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <!-- <span class="credit">Created By  </span> -->
+          <span class="far fa-copyright"></span><span>Copyright 2023 Unity Health Care. All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+         
+   <!--end footer-->
+   <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      } 
+</script>
+
+</body>
+</html>

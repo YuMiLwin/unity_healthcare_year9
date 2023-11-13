@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style1.css">
+   <link rel="icon" href="../IMG/LOGO.png">
+	<title>Find Diseases By First Letter</title>
+	<title></title>
+</head>
+<body id="BG" style="background-color:#B7A4D5;">
+    <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="../index.html">Unity</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Aboutus_page.html">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Services of Unity</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Services of Unity</label>
+          <ul class="drop-menu">
+            <li><a href="History.html">History</a></li>
+            <li><a href="Unity_Services.html">Services</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <!-- <li><a href="#">Drop menu 4</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Unity HealthCare</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Unity HealthCare</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../IMG/H3.png" alt="">
+              </div>
+              <div class="row">
+                <header>Events</header>
+                <ul class="mega-links">
+                  <li><a href="Find_Doctor.html">Find Doctors</a></li>
+                  <li><a href="#">Packages</a></li>
+                  <li><a href="Unity_MMSC.html">Membership cards</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>About Appointment</header>
+                <ul class="mega-links">
+                  <li><a href="LogIn.html">Log in</a></li>
+                  <li><a href="Make_Appointment.html">Appointment No </a></li>
+                  <li><a href="Time_To_Come.html">Schedules</a></li> 
+                </ul>
+              </div>
+              <div class="row">
+                <header>Health Library</header>
+                <ul class="mega-links">
+                  <li><a href="PG_S.html">Diseases </a></li>
+                  <li><a href="K3.html">Seasonal Diseases</a></li>
+                  <li><a href="Doctor_timetable.html">Doctor's Schedule</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="News.html">News</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+ 
+   <div class="banner"> 
+     <center></center><img src="../IMG/FD.png" class="SIC"></center>
+
+   </div>
+   <br/>
+  <!--end-->
+  <div class="container20">
+  <div class="circle_E1">
+  <h1 class="CAL">Choose a letter:</h1>
+  <ul id="letterList">
+    <li><a class="Size" href="Allergies.html" data-letter="A">A</a></li>
+    <li><a class="Size" href="#" data-letter="B">B</a></li>
+    <li><a class="Size" href="#" data-letter="C">C</li>
+    <li><a class="Size" href="#" data-letter="D">D</li>
+    <li><a class="Size" href="#" data-letter="E">E</li>
+    <li><a class="Size" href="#" data-letter="F">F</li>
+    <li><a class="Size" href="#" data-letter="G">G</li>
+ 
+    <li><a class="Size" href="#" data-letter="H">H</li> 
+    <li><a class="Size" href="#" data-letter="I">I</li> 
+    <li><a class="Size" href="#" data-letter="J">J</li>
+    <li><a class="Size" href="#" data-letter="K">K</li>
+    <li><a class="Size" href="#" data-letter="L">L</li>
+    <li><a class="Size"href="#" data-letter="M">M</li>
+      <br/>
+    <li><a class="Size" href="#" data-letter="N">N</li>  
+
+    <li><a class="Size" href="#" data-letter="O">O</li>
+    <li><a class="Size" href="#" data-letter="P">P</li>
+    <li><a class="Size" href="#" data-letter="Q">Q</li>
+    <li><a class="Size" href="#" data-letter="R">R</li> 
+    <li><a class="Size" href="#" data-letter="S">S</li> 
+    <li><a class="Size" href="#" data-letter="T">T</li>
+    <li><a class="Size" href="#" data-letter="U">U</li>
+    <li><a class="Size" href="#" data-letter="V">V</li>
+    <li><a class="Size" href="#" data-letter="W">W</li>
+    <li><a class="Size" href="#" data-letter="X">X</li>
+    <li><a class="Size" href="#" data-letter="Y">Y</li>
+    <li><a class="Size" href="#" data-letter="Z">Z</li>
+  </ul>
+</div>
+</div>
+
+   <div class="DIV5">  
+  <div id="relatedKeywords">
+    <h2 class="Size1">Related Keywords:</h2>
+    <ul id="keywordList">
+      <!-- Related keywords will be displayed here -->
+    </ul>
+  </div>
+</div>
+  
+  <script>
+    // Define related keywords for each letter along with their associated page URLs
+    const relatedKeywords = {
+      A: [
+        { keyword: 'Allergies', pageUrl: '' },
+        { keyword: 'AIDS', pageUrl: 'ThirdP.html' },
+        { keyword: 'Asthma', pageUrl: 'K2.html' },
+        { keyword: 'Acne', pageUrl: 'K3.html' },
+        { keyword: 'Anthrax', pageUrl: 'K2.html' },
+        { keyword: 'Amnesia', pageUrl: 'amnesia.html' },
+        { keyword: 'Alopecia', pageUrl: 'K2.html' },
+        { keyword: 'Appendicitis', pageUrl: 'K2.html' },
+        { keyword: 'Autism', pageUrl: 'K2.html' },
+      ],
+      B: [
+        { keyword: 'Breast cancer', pageUrl: 'breast%20cancer.html' },
+        { keyword: 'Bronchitis', pageUrl: 'bronchitis%20burmese.html' },
+        { keyword: 'Bipolar disorder', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Botulism', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Bacterial infections', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Bladder infection', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Bell', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Bedwetting', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Barrett', pageUrl: 'https://example.com/books-page' },
+        { keyword: 'Bursitis', pageUrl: 'https://example.com/books-page' },
+        
+      ],
+      C: [
+		  { keyword: 'Cancer', pageUrl: 'cancer.html' },
+		  { keyword: 'Cardiovascular disease', pageUrl: 'https://example.com/cardiovascular-disease-page' },
+		  { keyword: 'Common cold', pageUrl: 'https://example.com/common-cold-page' },
+		  { keyword: 'Cholera', pageUrl: 'https://example.com/cholera-page' },
+		  { keyword: 'Chickenpox', pageUrl: 'https://example.com/chickenpox-page' },
+		  { keyword: 'Cystic fibrosis', pageUrl: 'https://example.com/cystic-fibrosis-page' },
+		  { keyword: 'Crohn disease', pageUrl: 'https://example.com/crohn-disease-page' },
+		  { keyword: 'Celiac disease', pageUrl: 'https://example.com/celiac-disease-page' },
+		  { keyword: 'Chronic obstructive pulmonary disease (COPD)', pageUrl: 'https://example.com/copd-page' },
+		  { keyword: 'Cushing', pageUrl: 'https://example.com/cushing-page' },
+		],
+    F: [
+     { keyword: 'Fanconi anemia', pageUrl: 'fanconi%20anemia.html' },
+     { keyword: 'Felty syndrome', pageUrl: 'felty%20syndrome.html' },
+     { keyword: 'Flu', pageUrl: 'flu(Influenza).html' },
+     { keyword: 'Fractures', pageUrl: 'fractures.html' },
+   
+     ],
+    G: [
+      { keyword: 'Glaucoma', pageUrl: 'glaucoma.html' },
+      { keyword: 'Gastroenteritis', pageUrl: 'gastroenteritis.html' },
+      { keyword: 'Gastric ulcers', pageUrl: 'gastric%20ulcers.html' },
+      { keyword: 'Gout', pageUrl: 'gout.html' },
+      
+    ],    
+
+    H: [
+      { keyword: 'Heart Disease', pageUrl: 'heart%20disease%20(1).html' },
+      { keyword: 'Hemophilia', pageUrl: 'hemophilia%20(1).html' },
+      { keyword: 'Heptitis', pageUrl: 'hepatitis.html' },
+      { keyword: 'Herpes', pageUrl: 'herpes.html'},
+      { keyword: 'Hypertension', pageUrl: 'hypertension.html' },
+      
+    ],
+    I: [
+        { keyword: 'Indigestion', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      J: [
+        { keyword: 'Jancar', pageUrl: 'All_Diseases.html' },
+       
+      ], 
+      K: [
+        { keyword: 'Keloids', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      L: [
+        { keyword: 'Listeriosis', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      M: [
+        { keyword: 'Malaria', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      O: [
+        { keyword: 'Obesity', pageUrl: 'All_Diseases.html' },
+       
+      ],
+     P: [
+      { keyword: 'Parkinson', pageUrl: 'P1E.html' },
+      { keyword: 'Psoriasis', pageUrl: 'P3E.html' },
+      { keyword: 'Pancreatitis', pageUrl: 'P4E.html' },
+      { keyword: 'Prostate Cancer', pageUrl: 'P5E.html' },
+      { keyword: 'Peptic Ulcer Disease', pageUrl: 'P6E.html' },
+      
+    ],
+
+    Q: [
+        { keyword: 'Q fever', pageUrl: 'All_Diseases.html' },
+       
+      ],
+    R: [
+        { keyword: 'Rabies', pageUrl: 'All_Diseases.html' },
+       
+      ], 
+    S: [
+        { keyword: 'SAD', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      T: [
+        { keyword: 'Tularemia', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      U: [
+        { keyword: 'Ulcers ', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      V: [
+        { keyword: 'Vaginismus', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      W: [
+        { keyword: 'Warts', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      X: [
+        { keyword: 'Xanthinuria', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      Y: [
+        { keyword: 'Yeast infection', pageUrl: 'All_Diseases.html' },
+       
+      ],
+      // Define related keywords and page URLs for other letters
+      Z: [
+        { keyword: 'Zika Virus.', pageUrl: 'All_Diseases.html' },
+        { keyword: 'Zieve', pageUrl: 'All_Diseases.html' },
+        { keyword: 'Zika Virus', pageUrl: 'All_Diseases.html' },
+      ],
+    };
+    
+    // Get the letter list
+    const letterList = document.getElementById('letterList');
+    
+    // Get the related keywords list
+    const keywordList = document.getElementById('keywordList');
+    
+    // Add click event listeners to each letter
+    letterList.querySelectorAll('a').forEach((letterLink) => {
+      letterLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        const letter = letterLink.getAttribute('data-letter');
+        const keywords = relatedKeywords[letter] || [];
+        showRelatedKeywords(keywords);
+      });
+    });
+    
+    // Function to display related keywords
+    function showRelatedKeywords(keywords) {
+      keywordList.innerHTML = '';
+      keywords.forEach((item) => {
+        const li = document.createElement('li');
+        const keywordLink = document.createElement('a');
+        keywordLink.textContent = item.keyword;
+        keywordLink.href = item.pageUrl;
+        keywordLink.target = '_blank'; // Open the link in a new tab
+        li.appendChild(keywordLink);
+        keywordList.appendChild(li);
+      });
+    }
+  </script>
+
+  <!--start footer-->
+   <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2 id="He">About us</h2>
+          <div class="content">
+             <span id="Sm">Our Unity HealthCare is founded in 1989 and our doctors are also patient and take good care to our patients. We also trained our workers really well so you guys won't be disappointed in us! So Let's Fight Together!  
+            </span>
+            <div class="social">
+               <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-viber fa-beat" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #ffffff;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2 id="He">Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">123, Hlden Street, Lanmadaw TownShip</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+089-765432100</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">Unity@info.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2 id="He">Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit" id="ypgs">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <!-- <span class="credit">Created By  </span> -->
+          <span class="far fa-copyright"></span><span>Copyright 2023 By Unity Health Care. All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+         
+ 
+  <!--end footer-->
+</body>
+</html>
